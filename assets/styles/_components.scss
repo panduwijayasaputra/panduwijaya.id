@@ -1,0 +1,76 @@
+// Components
+.link {
+  color: $blue-sky;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  font-size: 18px;
+  font-family: 'Foco';
+  font-weight: normal;
+  letter-spacing: .2rem;
+  text-transform: capitalize;
+  color: $smoke-white;
+  background-color: $dark-grey;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+
+  &:hover {
+    background-color: $blue-sky;
+    // transform: translateY(-1px);
+    box-shadow: 0 30px 50px -20px shade($blue-sky, 5%);
+  }
+
+  &--form {
+    font-size: 16px;
+    padding: .5rem 1rem;
+    letter-spacing: unset;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &-group {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: flex-start;
+
+    & *:first-child {
+      padding-top: .5rem;
+      flex:0 0 30%;
+
+      @media ($tablet-potrait) {
+        flex: 0 0 20%;
+      }
+    }
+  }
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  & > .btn {
+    flex: 0 0 70%;
+    margin-bottom: 2rem;
+    // margin-right: 1rem;
+
+    @media ($tablet-potrait) {
+      flex: 0 0 150px;
+    }
+  }
+}
+
+input, textarea {
+  width: 100%;
+  padding: .5rem;
+  color: $grey;
+  font-family: 'Foco Light';
+  font-size: 16px;
+  resize: none;
+}
