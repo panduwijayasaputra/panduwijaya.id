@@ -1,0 +1,189 @@
+// About
+.about {
+  padding: 3rem 0;
+  min-height: calc(100vh - 120px);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    @media ($tablet-potrait) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__profile-picture {
+
+      @media ($tablet-potrait) {
+          flex-basis: 30%;
+      }
+
+      @media ($tablet-landscape) {
+          flex-basis: 15%;
+      }
+
+      @media ($large-display) {
+          flex-basis: 10%;
+      }
+
+
+      &__wrapper {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        & > img {
+          width: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // flex: 1;
+
+      @media ($tablet-potrait) {
+        flex-basis: 65%;
+        align-items: flex-start;
+      }
+
+      @media ($tablet-landscape) {
+        flex-basis: 75%;
+      }
+
+      @media ($large-display) {
+        flex-basis: 81%;
+      }
+
+      &__text {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media ($tablet-potrait) {
+        align-items: flex-start;
+      }
+
+        h3 {
+          line-height: 2;
+        }
+
+        p {
+          line-height: 1;
+        }
+      }
+
+      &__social {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        & > a {
+          &:not(:last-of-type) {
+            margin-right: 1rem;
+          }
+
+          & > svg {
+            fill: $blue-sky;
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+      }
+
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media ($tablet-potrait) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__title {
+      margin-bottom: 1rem;
+      text-align: center;
+
+      @media ($tablet-potrait) {
+        flex-basis: 30%;
+        text-align: left;
+      }
+
+      @media ($tablet-landscape) {
+        flex-basis: 15%;
+      }
+
+      @media ($large-display) {
+        flex-basis: 10%;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      margin-bottom: 2rem;
+
+      @media ($tablet-potrait) {
+        flex-basis: 65%;
+        // flex-grow: 1;
+      }
+
+      @media ($tablet-landscape) {
+        flex-basis: 75%;
+        // flex-grow: 1;
+      }
+
+      @media ($large-display) {
+        flex-basis: 81%;
+      }
+
+      & > p:not(:last-of-type) {
+        margin-bottom: 1rem;
+        text-align: justify;
+      }
+
+      &.skills {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & > .skills__item {
+          flex-basis: 100%;
+          margin-bottom: 1rem;
+
+          @media ($phone) {
+            flex-basis: 50%;
+          }
+
+          @media ($tablet-landscape) {
+            flex-basis: 20%;
+          }
+        }
+      }
+    }
+
+  }
+
+  .btn {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+
+}

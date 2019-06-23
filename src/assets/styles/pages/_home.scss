@@ -1,0 +1,39 @@
+.hero {
+  height: calc(100vh - 60px);
+  background-color: $dark-grey;
+  text-align: center;
+  color: $smoke-white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  // justify-content: center;
+  align-items: center;
+
+  &__content {
+
+    img {
+      width: 200px;
+      margin-bottom: 1rem;
+
+      @media ($tablet-potrait) {
+        width: 100%;
+      }
+    }
+
+    p {
+      font-family: 'Foco Light' !important;
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+
+    svg {
+      fill: $blue-sky;
+      height: 10px;
+      width: 10px;
+      margin-left: .5rem;
+    }
+  }
+}

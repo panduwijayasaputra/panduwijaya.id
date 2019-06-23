@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Foco Light', sans-serif;
+  color: $grey;
+  background-color: $smoke-white;
+  font-weight: 400;
+  line-height: 1.6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none !important;
+}

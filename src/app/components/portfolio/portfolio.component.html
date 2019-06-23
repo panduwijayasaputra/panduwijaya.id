@@ -1,0 +1,98 @@
+<!-- Portfolio -->
+<main class="portfolio">
+  <div class="container portfolio__wrapper">
+    <div class="portfolio__project">
+      <div class="portfolio__project__item">
+        <img [src]="projectAlbum[0].src" alt="Lintas">
+        <div class="portfolio__project__item__action">
+          <h4>SHIPPING SERVICE</h4>
+          <div class="portfolio__project__item__action__cta">
+            <a (click)="openLightbox(0)">
+              <svg>
+                <use xlink:href="assets/images/icon.svg#icon-enlarge"></use>
+              </svg>
+            </a>
+            <a href="http://lintas.com.au" target="blank">
+              <svg>
+                <use xlink:href="assets/images/icon.svg#icon-link"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__project__item">
+        <img [src]="projectAlbum[1].src" alt="Web Developer Portfolio">
+        <div class="portfolio__project__item__action">
+          <h4>DEVELOPER PORTFOLIO</h4>
+          <div class="portfolio__project__item__action__cta">
+            <a (click)="openLightbox(1)">
+              <svg>
+                <use xlink:href="assets/images/icon.svg#icon-enlarge"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__project__item">
+        <img [src]="projectAlbum[2].src" alt="Loan Process">
+        <div class="portfolio__project__item__action">
+          <h4>LOAN PROCESS</h4>
+          <div class="portfolio__project__item__action__cta">
+            <a (click)="openLightbox(2)">
+              <svg>
+                <use xlink:href="assets/images/icon.svg#icon-enlarge"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__project__item">
+        <img [src]="projectAlbum[3].src" alt="Bank Company Profile">
+        <div class="portfolio__project__item__action">
+          <h4>BANK COMPANY PROFILE</h4>
+          <div class="portfolio__project__item__action__cta">
+            <a (click)="openLightbox(3)">
+              <svg>
+                <use xlink:href="assets/images/icon.svg#icon-enlarge"></use>
+              </svg>
+            </a>
+            <a href="http://dutakepri.com" target="blank">
+              <svg>
+                <use xlink:href="assets/images/icon.svg#icon-link"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__project__item">
+        <img [src]="projectAlbum[4].src" alt="Loan Calculator">
+        <div class="portfolio__project__item__action">
+          <h4>LOAN COST CALCULATOR</h4>
+          <div class="portfolio__project__item__action__cta">
+            <a (click)="openLightbox(4)">
+              <svg>
+                <use xlink:href="assets/images/icon.svg#icon-enlarge"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__project__item">
+        <img [src]="projectAlbum[5].src" alt="Schedule Calender Web App">
+        <div class="portfolio__project__item__action">
+          <h4>ACTIVITY CALENDAR</h4>
+          <div class="portfolio__project__item__action__cta">
+            <a (click)="openLightbox(5)">
+              <svg>
+                <use xlink:href="assets/images/icon.svg#icon-enlarge"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a [routerLink]="['/contact']" class="btn">Start Project</a>
+  </div>
+</main>
+
+<app-footer></app-footer>

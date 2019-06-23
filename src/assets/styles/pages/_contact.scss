@@ -1,0 +1,27 @@
+// Contact
+.contact {
+  padding: 3rem 0 0 0;
+  min-height: calc(100vh - 120px);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+
+    .email-link-paragraph {
+      text-align: center;
+      flex: 1 0 100%;
+
+      @media ($tablet-landscape) {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(80% - 150px - 1rem);
+        text-align: left;
+        margin-left: 1rem;
+      }
+    }
+  }
+}

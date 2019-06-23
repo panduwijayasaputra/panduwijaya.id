@@ -1,0 +1,32 @@
+<!-- Header -->
+<header class="header">
+  <div class="container header__wrapper">
+    <div class="header__logo">
+      <a [routerLink]="['/']">&lt;pw/&gt;</a>
+    </div>
+    <nav class="header__nav">
+      <ul>
+        <li><a [routerLinkActive]="'active'" [routerLink]="['/home']">Home</a></li>
+        <li><a [routerLinkActive]="'active'" [routerLink]="['/portfolio']">Portfolio</a></li>
+        <li><a [routerLinkActive]="'active'" [routerLink]="['/about']">About</a></li>
+        <li><a [routerLinkActive]="'active'" [routerLink]="['/contact']">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__hamburger" [class.close]="isMobileMenuOpen" (click)="toggleMobileMenuClass()">
+      <div class="header__hamburger__bar"></div>
+      <div class="header__hamburger__bar"></div>
+      <div class="header__hamburger__bar"></div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" [class.open]="isMobileMenuOpen">
+  <ul>
+    <li><a (click)="isMobileMenuOpen = false" [routerLinkActive]="'active'" [routerLink]="['/home']">Home</a></li>
+    <li><a (click)="isMobileMenuOpen = false" [routerLinkActive]="'active'" [routerLink]="['/portfolio']">Portfolio</a>
+    </li>
+    <li><a (click)="isMobileMenuOpen = false" [routerLinkActive]="'active'" [routerLink]="['/about']">About</a></li>
+    <li><a (click)="isMobileMenuOpen = false" [routerLinkActive]="'active'" [routerLink]="['/contact']">Contact</a></li>
+  </ul>
+</nav>
