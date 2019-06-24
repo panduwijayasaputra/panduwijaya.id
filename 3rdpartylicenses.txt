@@ -297,6 +297,9 @@ MIT
 @angular/router
 MIT
 
+@angular/animations
+MIT
+
 @angular/core
 MIT
 
